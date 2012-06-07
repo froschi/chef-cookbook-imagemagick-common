@@ -1,13 +1,9 @@
 packages = Array.new
 
 case node[:lsb][:codename]
-when "lucid"
-  packages |= %w/
-    
-  /
 when "precise"
   packages |= %w/
-    
+    imagemagick-common
   /
 end
 
